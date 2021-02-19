@@ -9,7 +9,7 @@ img {
 	margin: 0 auto;
 }
 
-div {
+main {
 	display: block;
 	width: 500px;
 	border: 1px solid #00000020;
@@ -30,7 +30,7 @@ a {
 }
 
 @media only screen and (max-width: 500px) {
-	div {
+	main {
 		width: 100vw;
 		border-radius: 0;
 		border: 0;
@@ -42,7 +42,7 @@ a {
 		background: #1a1a1a;
 		color: #fff;
 	}
-	div {
+	main {
 		border-color: #ffffff20;
 	}
 }
@@ -58,4 +58,11 @@ table {
 
 .gray {
 	color: #747F8D;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: .5rem 0 0;
 }
