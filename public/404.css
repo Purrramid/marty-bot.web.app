@@ -20,20 +20,9 @@ main {
 	box-sizing: border-box;
 }
 
-.invite {
-	display: block;
-	text-decoration: none;
-	background-color: #7289DA;
-	color: #fff;
-	padding: 10px 20px;
-	border-radius: 5px;
+a {
+	color: inherit;
 }
-
-.commands {
-	text-decoration: none;
-	color: #0005;
-}
-
 
 @media only screen and (max-width: 500px) {
 	main {
@@ -54,19 +43,6 @@ main {
 	.commands {
 		color: #FFF5;
 	}
-}
-
-table {
-	width: 100%;
-	text-align: center;
-}
-
-.green {
-	color: #43B581;
-}
-
-.gray {
-	color: #747F8D;
 }
 
 .flex {
