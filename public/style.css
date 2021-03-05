@@ -20,7 +20,7 @@ main {
 	box-sizing: border-box;
 }
 
-a {
+.invite {
 	display: block;
 	text-decoration: none;
 	background-color: #7289DA;
@@ -28,6 +28,12 @@ a {
 	padding: 10px 20px;
 	border-radius: 5px;
 }
+
+.commands {
+	text-decoration: none;
+	color: #0005;
+}
+
 
 @media only screen and (max-width: 500px) {
 	main {
@@ -44,6 +50,9 @@ a {
 	}
 	main {
 		border-color: #ffffff20;
+	}
+	.commands {
+		color: #FFF5;
 	}
 }
 
