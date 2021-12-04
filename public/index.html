@@ -9,18 +9,21 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-	<img src="marty.png" alt="Marty icon">
-	<main>
-		<h3>Hi! I'm Marty!</h3>
-		<p>I'm a bot for a Discord server called <strong>The Purrramid</strong>. They're a bunch of open-minded nerds playing games. No matter your gender, ethnicity or sexuality, you're welcome to join!</p>
-		<a href="https://discord.gg/y8XHJHAZ5C" class="invite">Join the Discord</a>
-		<div class="flex">
-			<div><span class="green">●</span> Online: <span id="online">--</span></div>
-			<div><span class="gray">●</span> Members: <span id="members">--</span></div>
+<body class="m-2 dark:bg-near-black dark:text-white">
+	<img src="marty.png" alt="Marty icon" class="block w-full max-w-[250px] mx-auto">
+	<main class="w-full max-w-[500px] sm:border border-black dark:border-white border-opacity-10 dark:border-opacity-10 rounded-xl p-3 my-5 mx-auto text-center">
+		<h3 class="text-xl font-bold my-2">Hi! I'm Marty!</h3>
+		<p class="my-2">I'm a bot for a Discord server called <a href="https://purrramid.github.io/" class="underline">The Purrramid</a>. They're a bunch of open-minded nerds playing games. No matter your gender, ethnicity or sexuality, you're welcome to join!</p>
+		<a href="https://discord.gg/y8XHJHAZ5C" class="block bg-blurple text-white py-2 px-5 rounded">Join the Discord</a>
+		<div class="flex justify-around">
+			<div><span class="text-discord-green">●</span> Online: <span id="online">--</span></div>
+			<div><span class="text-discord-gray">●</span> Members: <span id="members">--</span></div>
 		</div>
 	</main>
-	<div class="flex"><a href="./commands/" class="commands">Commands&nbsp;&rarr;</a></div>
+	<div class="flex justify-around w-full max-w-[500px] mx-auto">
+		<a href="./commands/" class="p-2 hover:bg-black hover:bg-opacity-20 rounded">Commands</a>
+		<a href="./admin/" class="p-2 hover:bg-black hover:bg-opacity-20 rounded">Control Panel</a>
+	</div>
 	<script src="script.js"></script>
 </body>
 

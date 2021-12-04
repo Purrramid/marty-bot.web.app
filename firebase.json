@@ -6,12 +6,16 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "redirects": [ 
+    "redirects": [
       {
         "source": "/admin",
         "destination": "https://purrr-marty-control-panel.herokuapp.com/",
         "type": 302
-      } 
+      },
+      {
+        "source": "**",
+        "destination": "/"
+      }
     ]
   }
 }
