@@ -9,15 +9,23 @@
 	<link rel="stylesheet" href="/style.css">
 </head>
 
-<body class="dark:bg-near-black dark:text-white my-3">
-	<nav class="flex m-8 justify-center items-center gap-8">
+<body class="dark:bg-near-black dark:text-white">
+	<nav class="bg-black text-white flex flex-wrap">
+		<a href="/" class="hover:bg-white hover:bg-opacity-20 p-2 flex gap-2 font-bold">
+			<img src="/marty.png" class="h-6">
+			<span>Marty Bot</span>
+		</a>
+		<a href="https://discord.gg/y8XHJHAZ5C" class="hover:bg-blurple hover:text-white p-2">Join the Discord</a>
+		<a href="/commands" class="p-2 hover:bg-white hover:bg-opacity-20 underline">Commands</a>
+	</nav>
+	<header class="flex m-8 justify-center items-center gap-8">
 		<img src="/marty.png" alt="Marty icon" class="block w-[250px] max-w-[20vw] max-h-[20vw]">
 		<div class="flex flex-col">
-			<h2 class="text-2xl font-bold"><a href="/" class="underline">Marty Bot</a> Commands</h2>
+			<h2 class="text-2xl font-bold">Marty Bot Commands</h2>
 			<div class="text-opacity-75">If you ever need help, check this site or ask <span class="text-admin bg-admin bg-opacity-10">@The Jellicles</span>.</div>
 			<div><a href="https://discord.gg/y8XHJHAZ5C" class="text-white bg-blurple py-1 px-5 rounded mt-4 inline-block">Join the Discord!</a></div>
 		</div>
-	</nav>
+	</header>
 	<main class="grid sm:grid-cols-2-auto mx-4">
 		<b class="text-left sm:text-right pr-8 text-xl">!commands</b>
 		<span class="mb-4 ml-4">The command that leads to this site.</span>
