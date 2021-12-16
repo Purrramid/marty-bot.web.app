@@ -725,6 +725,11 @@ video {
   --tw-border-opacity: 0.1;
 }
 
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
@@ -733,11 +738,6 @@ video {
 .bg-blurple {
   --tw-bg-opacity: 1;
   background-color: rgba(88, 101, 242, var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 
 .bg-admin {
@@ -826,9 +826,9 @@ video {
   text-decoration: underline;
 }
 
-.hover\:bg-blurple:hover {
+.hover\:bg-white:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(88, 101, 242, var(--tw-bg-opacity));
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 }
 
 .hover\:bg-black:hover {
@@ -836,13 +836,26 @@ video {
   background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
 }
 
-.hover\:bg-white:hover {
+.hover\:bg-blurple:hover {
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgba(88, 101, 242, var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-20:hover {
   --tw-bg-opacity: 0.2;
+}
+
+.hover\:bg-gradient-to-tr:hover {
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.hover\:from-\[\#939\]:hover {
+  --tw-gradient-from: #939;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(153, 51, 153, 0));
+}
+
+.hover\:to-\[\#ff0048\]:hover {
+  --tw-gradient-to: #ff0048;
 }
 
 .hover\:text-white:hover {

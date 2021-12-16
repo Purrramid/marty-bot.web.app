@@ -1,6 +1,39 @@
-<meta http-equiv="refresh" content="0;url=/">
-<script>location.replace("/")</script>
-<noscript>
-	<h2>404 Not Found</h2>
-	<a href="/">Return home</a>
-</noscript>
+<html lang="en">
+
+<head>
+	<title>Not Found - Marty Bot</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' ; script-src 'unsafe-inline'">
+	<link rel="shortcut icon" href="/marty.png">
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="dark:bg-near-black dark:text-white">
+	<nav class="bg-black text-white flex flex-wrap">
+		<a href="/" class="hover:bg-white hover:bg-opacity-20 p-2 flex gap-2 font-bold">
+			<img src="/marty.png" class="h-6" draggable="false">
+			<span>Marty Bot</span>
+		</a>
+	</nav>
+	<main class="p-2">
+		<p>Looks like you went missing. <a href="/" class="underline">Go home.</a></p>
+
+		<p>Automatically redirecting you in <span id="ri">5</span>...</p>
+
+		<script type="text/javascript">
+			{
+				let i = 5
+				setInterval(() => {
+					if (i <= 0) {
+						location.replace("/")
+					}
+					document.getElementById("ri").textContent = i.toString()
+					i--
+				}, 1e3)
+			}
+		</script>
+	</main>
+</body>
+
+</html>
