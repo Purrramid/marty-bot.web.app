@@ -4,20 +4,24 @@
 	<title>Commands - Marty Bot</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' ; style-src 'self' https://fonts.googleapis.com ; font-src https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="/marty.png">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/style.css">
 </head>
 
 <body class="dark:bg-near-black dark:text-white">
-	<nav class="bg-black text-white flex flex-wrap">
-		<a href="/" class="hover:bg-white hover:bg-opacity-20 p-2 flex gap-2 font-bold">
-			<img src="/marty.png" class="h-6" draggable="false">
-			<span>Marty Bot</span>
-		</a>
-		<a href="/commands" class="p-2 hover:bg-white hover:bg-opacity-20 underline">Commands</a>
-		<a href="https://discord.gg/y8XHJHAZ5C" class="hover:bg-blurple hover:text-white p-2">Join the Discord</a>
-		<a href="https://purrramid.github.io" class="hover:bg-gradient-to-tr hover:from-[#939] hover:to-[#ff0048] hover:text-white p-2">The Purrramid</a>
+	<nav class="flex backdrop-blur-lg sticky top-0 border-b">
+		<div class="flex flex-wrap">
+			<a href="/" class="border-t border-opacity-20 border-black dark:border-white p-2 flex gap-2 font-bold hover:bg-black dark:hover:bg-white hover:bg-opacity-20 dark:hover:bg-opacity-20">
+				<img src="/marty.png" class="h-6" draggable="false">
+				<span>Marty Bot</span>
+			</a>
+			<a href="/commands" class="border-t border-opacity-20 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:bg-opacity-20 dark:hover:bg-opacity-20 p-2">Commands</a>
+			<a href="https://discord.gg/y8XHJHAZ5C" class="border-t border-blurple hover:bg-blurple hover:text-white p-2"><span class="hidden sm:inline">Join the </span>Discord</a>
+			<a href="https://purrramid.github.io" class="border-t border-[#ff0048] bg-gradient-to-tr hover:from-[#939] hover:to-[#ff0048] hover:text-white p-2"><span class="hidden sm:inline">The </span>Purrramid</a>
+		</div>
+		<div class="flex-1 border-t border-opacity-20 border-black dark:border-white"></div>
 	</nav>
 	<header class="flex m-8 justify-center items-center gap-8">
 		<img src="/marty.png" alt="Marty icon" class="block w-[250px] max-w-[20vw] max-h-[20vw]">
@@ -27,7 +31,7 @@
 			<div><a href="https://discord.gg/y8XHJHAZ5C" class="text-white bg-blurple py-1 px-5 rounded mt-4 inline-block">Join the Discord!</a></div>
 		</div>
 	</header>
-	<main class="grid sm:grid-cols-2-auto mx-4">
+	<main class="grid sm:[grid-template-columns:repeat(2,auto)] mx-4">
 		<b class="text-left sm:text-right pr-8 text-xl">!commands</b>
 		<span class="mb-4 ml-4">The command that leads to this site.</span>
 

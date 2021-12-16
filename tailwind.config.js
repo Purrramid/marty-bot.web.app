@@ -1,7 +1,5 @@
 module.exports = {
-  mode: "jit",
-  purge: ["public/**/*.html"],
-  darkMode: "media",
+  content: ["public/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -13,13 +11,10 @@ module.exports = {
         admin: "#0FDDAA",
         'near-black': "#1a1a1a"
       },
-      gridTemplateColumns: {
-        '2-auto': 'repeat(2, auto)'
+      fontFamily: {
+        sans: ["Rubik", "sans-serif"],
       }
     },
-  },
-  variants: {
-    extend: {},
   },
   plugins: [],
 }

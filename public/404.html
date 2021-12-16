@@ -4,17 +4,21 @@
 	<title>Not Found - Marty Bot</title>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self' ; script-src 'unsafe-inline'">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' ; style-src 'self' https://fonts.googleapis.com ; font-src https://fonts.gstatic.com ; script-src 'unsafe-inline'">
 	<link rel="shortcut icon" href="/marty.png">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="/style.css">
 </head>
 
 <body class="dark:bg-near-black dark:text-white">
-	<nav class="bg-black text-white flex flex-wrap">
-		<a href="/" class="hover:bg-white hover:bg-opacity-20 p-2 flex gap-2 font-bold">
-			<img src="/marty.png" class="h-6" draggable="false">
-			<span>Marty Bot</span>
-		</a>
+	<nav class="flex flex-wrap backdrop-blur-lg sticky top-0 border-b">
+		<div class="flex flex-wrap">
+			<a href="/" class="border-t border-opacity-20 border-black dark:border-white p-2 flex gap-2 font-bold hover:bg-black dark:hover:bg-white hover:bg-opacity-20 dark:hover:bg-opacity-20">
+				<img src="/marty.png" class="h-6" draggable="false">
+				<span>Marty Bot</span>
+			</a>
+		</div>
+		<div class="flex-1 border-t border-opacity-20 border-black dark:border-white"></div>
 	</nav>
 	<main class="p-2">
 		<p>Looks like you went missing. <a href="/" class="underline">Go home.</a></p>
