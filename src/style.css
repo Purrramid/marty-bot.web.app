@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+nav.open .nav-open\:flex {
+	display: flex;
+}
+
+nav.open .nav-open\:bg-black\/20 {
+	background-color: rgba(0 0 0 / 20%);
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+	nav.open .dark\:nav-open\:bg-black\/20 {
+		background-color: rgba(0 0 0 / 20%);
+	}
+}
+
+nav.open {
+	@apply shadow sm:shadow-none;
+}

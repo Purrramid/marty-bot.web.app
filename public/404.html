@@ -11,14 +11,14 @@
 </head>
 
 <body class="dark:bg-near-black dark:text-white">
-	<nav class="flex flex-wrap backdrop-blur-lg sticky top-0 border-b">
-		<div class="flex flex-wrap">
-			<a href="/" class="border-t border-opacity-20 border-black dark:border-white p-2 flex gap-2 font-bold hover:bg-black dark:hover:bg-white hover:bg-opacity-20 dark:hover:bg-opacity-20">
+	<nav class="sticky top-0 bg-white/75 dark:bg-near-black/75 backdrop-blur-lg flex flex-col">
+		<div class="flex flex-row">
+			<a href="/" class="p-2 flex gap-2 font-bold hover:bg-black/20 dark:hover:bg-white/20">
 				<img src="/marty.png" class="h-6" draggable="false">
 				<span>Marty Bot</span>
 			</a>
+			<a class="p-2">404 - Not Found</a>
 		</div>
-		<div class="flex-1 border-t border-opacity-20 border-black dark:border-white"></div>
 	</nav>
 	<main class="p-2">
 		<p>Looks like you went missing. <a href="/" class="underline">Go home.</a></p>
@@ -27,7 +27,7 @@
 
 		<script type="text/javascript">
 			{
-				let i = 5
+				let i = 4
 				setInterval(() => {
 					if (i <= 0) {
 						location.replace("/")

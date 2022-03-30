@@ -2,7 +2,7 @@
   "private": true,
   "name": "marty-bot.web.app",
   "scripts": {
-    "tailwind": "tailwindcss -o public/style.css"
+    "tailwind": "tailwindcss -i src/style.css -o public/style.css"
   },
   "repository": {
     "type": "git",
@@ -10,8 +10,6 @@
   },
   "homepage": "https://marty-bot.web.app",
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "postcss": "^8.4.5",
     "tailwindcss": "^3.0.5"
   }
 }
